@@ -124,8 +124,6 @@ int main(){
   double rate = (double)(end - start);
   std::cout << "cpuMultime = " << rate / CLOCKS_PER_SEC << "sec.\n";
 
-  delete [] C.elements;
-
   //計測開始
   start = clock();
   C = matrixMul_gpu(A, B);
